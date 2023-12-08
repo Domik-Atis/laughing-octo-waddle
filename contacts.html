@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #000000, #87cefa);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 300px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #ffffff;
+    }
+    
+    .contact-card {
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .contact-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .contact-number {
+      font-size: 16px;
+      color: #555555;
+    }
+    
+    .contact-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contacts</h1>
+  
+  <div class="contact-list">
+    <div class="contact-card">
+      <div class="contact-name">Паша</div>
+      <div class="contact-number">8977862****</div>
+    </div>
+    
+    <div class="contact-card">
+      <div class="contact-name">Денчик</div>
+      <div class="contact-number">8977350****</div>
+    </div>
+    
+    <div class="contact-card">
+      <div class="contact-name">Даня</div>
+      <div class="contact-number">8999735****</div>
+    </div>
+  </div>
+  <script>
+    // Оживление страницы с помощью JavaScript
+    const contactCards = document.querySelectorAll('.contact-card');
+    
+    contactCards.forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
