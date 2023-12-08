@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="about.css">
+  <title>Messenger Users</title>
+</head>
+<body>
+  <h1 class="header">Сообщения в мессенджере</h1>
+  
+  <input type="text" class="search-input" placeholder="Поиск сообщений...">
+  
+  <div class="user-list">
+    <div class="user-card" onclick="openWebsite('a1.html')">
+      <img class="user-avatar" src="C:\Users\User\Desktop\Новая папка (3)\BajGebsIVA4.jpg" alt="User Avatar">
+      <div class="user-name">Вика Русакова</div>
+      <div class="user-message">Привет! Как дела?</div>
+    </div>
+    
+    <div class="user-card" onclick="openWebsite('a2.html')">
+      <img class="user-avatar" src="C:\Users\User\Desktop\Новая папка (3)\bZDjDewgRuk.jpg" alt="User Avatar">
+      <div class="user-name">Fvcking Derealization</div>
+      <div class="user-message">Привет! Что нового?</div>
+    </div>
+    
+    <div class="user-card" onclick="openWebsite('a3.html')">
+      <img class="user-avatar" src="C:\Users\User\Desktop\Новая папка (3)\LRUzosZWq1M.jpg" alt="User Avatar">
+      <div class="user-name">Сережа Романов</div>
+      <div class="user-message">Привет! Как прошел день?</div>
+    </div>
+  </div>
+
+  <script>
+    function openWebsite(url) {
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>

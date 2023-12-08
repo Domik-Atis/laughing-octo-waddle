@@ -1,0 +1,56 @@
+
+    body {
+      background: linear-gradient(to bottom, #000000, #87CEEB);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 300px;
+    }
+    
+    .header {
+      text-align: center;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .search-input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 20px;
+    }
+    
+    .user-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .user-card {
+      width: 200px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 100px;
+      cursor: pointer;
+    }
+    
+    .user-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    
+    .user-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .user-message {
+      font-size: 14px;
+    }
