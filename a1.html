@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messenger</title>
+  <style>
+    body {
+      background-color: #e0f2f1;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .header {
+      text-align: center;
+      color: #006064;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .message-container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    .message {
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .user-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .user-name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .message-content {
+      font-size: 14px;
+    }
+    
+    .input-container {
+      display: flex;
+      margin-top: 20px;
+    }
+    
+    .message-input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 10px;
+    }
+    
+    .send-button {
+      background-color: #0097a7;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">Мессенджер</h1>
+  
+  <div class="message-container">
+    <div class="message">
+      <img class="user-avatar" src="C:\Users\User\Desktop\Новая папка (3)\844T_2Hi73o.jpg" alt="User Avatar">
+      <div>
+        <div class="user-name">Даниил Каширин</div>
+        <div class="message-content">Привет! Как дела?</div>
+      </div>
+    </div>
+    
+    <div class="message">
+      <img class="user-avatar" src="C:\Users\User\Desktop\Новая папка (3)\BajGebsIVA4.jpg" alt="User Avatar">
+      <div>
+        <div class="user-name">Вика Русакова</div>
+        <div class="message-content">Привет! Всё отлично, спасибо!</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="input-container">
+    <input type="text" class="message-input" placeholder="Введите сообщение...">
+    <button class="send-button">Отправить</button>
+  </div>
+  
+  <script>
+    const sendButton = document.querySelector('.send-button');
+    const messageInput = document.querySelector('.message-input');
+    const messageContainer = document.querySelector('.message-container');
+    
+    sendButton.addEventListener('click', () => {
+      const messageContent = messageInput.value.trim();
+      if (messageContent !== '') {
+        const message = document.createElement('div');
+        message.classList.add('message');
+        message.innerHTML = `
+          <img class="user-avatar" src="avatar1.jpg" alt="User Avatar">
+          <div>
+            <div class="user-name">Пользователь 1</div>
+            <div class="message-content">${messageContent}</div>
+          </div>
+        `;
+        messageContainer.appendChild(message);
+        messageInput.value = '';
+      }
+    });
+  </script>
+</body>
+</html>
