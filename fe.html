@@ -36,5 +36,21 @@
     Welcome to Atis - your social network! Atis is the first project of our team, and we are pleased to offer you the opportunity to try it out in real time. Here you can chat with friends, share photos and videos, view news and much more. Join Atis today and start building your community! Creating a social network is not a new idea, but we at Atis are sure that we were able to implement it better than anyone else. We strive to make communication simple and convenient for all users. Join our growing family on Atis and let's create something special together!
   </font>
   </p>
+  <script>
+        function createSnowflake() {
+            const snowflake = document.createElement('span');
+            snowflake.innerHTML = '❄';
+            snowflake.classList.add('snowflake');
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+            document.body.appendChild(snowflake);
+
+            setTimeout(function() {
+                snowflake.remove();
+            }, 5000);
+        }
+
+        setInterval(createSnowflake, 100);
+    </script>
 </body>
 </html>
