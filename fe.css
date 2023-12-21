@@ -4,6 +4,7 @@
     body {
       background: linear-gradient(to bottom, #000000, #66b0ff);
       font-family: 'Roboto', sans-serif;
+         overflow: hidden;
     }
     
     h1 {
@@ -176,3 +177,30 @@
     opacity: 0; /* Лампочка видима */
   }
 }
+
+ .snowflake-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: #fff;
+            font-size: 20px;
+            animation: snowfall linear infinite;
+        }
+
+        @keyframes snowfall {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
