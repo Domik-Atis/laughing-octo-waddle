@@ -48,4 +48,131 @@
       0% { opacity: 0; }
       100% { opacity: 1; }
     }
-  
+
+.garland {
+  position: relative;
+  width: 500px; /* Измените размеры под ваши предпочтения */
+  height: 100px;
+}
+
+.light {
+  position: absolute;
+  width: 20px; /* Измените размеры лампочек по желанию */
+  height: 20px;
+  border-radius: 50%;
+  animation: blink 3s infinite; /* Добавляем анимацию мигания */
+}
+
+.light1 {
+  background-color: #ffff33 ;
+  top: 50%;
+  left: 20px;
+  animation-delay: 0s ;
+
+}
+
+.light2 {
+  background-color: #ff3333 ;
+  top: 30%;
+  left: 100px;
+  animation-delay: 1s ;
+}
+
+.light3 {
+  background-color: #a8ffab ;
+  top: 70%;
+  left: 180px;
+  animation-delay: 2s ;
+}
+
+.light4 {
+  background-color: #ff337a ;
+  top: 80%;
+  left: 280px;
+  animation-delay: 3s ;
+}
+
+.light5 {
+  background-color: #ff9900 ;
+  top: 40%;
+  left: 360px;
+  animation-delay: 4s ;
+}
+
+.light6 {
+  background-color: #3333ff ;
+  top: 65%;
+  left: 420px;
+  animation-delay: 5s ;
+}
+
+.light7 {
+  background-color: #ffff33 ;
+  top: 40%;
+  left: 520px;
+  animation-delay: 6s ;
+}
+
+
+.light8 {
+  background-color: #ff3333 ;
+  top: 80%;
+  left: 610px;
+  animation-delay: 7s ;
+}
+
+
+.light9 {
+  background-color: #a8ffab ;
+  top: 40%;
+  left: 700px;
+  animation-delay: 8s ;
+}
+
+
+.light10 {
+  background-color: #ff337a ;
+  top: 75%;
+  left: 800px;
+  animation-delay: 9s ;
+}
+
+.light11 {
+  background-color: #ff9900 ;
+  top: 35%;
+  left: 900px;
+  animation-delay: 10s ;
+}
+
+.light12 {
+  background-color: #3333ff ;
+  top: 75%;
+  left: 980px;
+  animation-delay: 11s ;
+}
+
+.light13 {
+  background-color: #ffff33 ;
+  top: 25%;
+  left: 1080px;
+  animation-delay: 12s ;
+}
+
+.light14 {
+  background-color: #ff3333 ;
+  top: 85%;
+  left: 1150px;
+  animation-delay: 13s ;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0; /* Лампочка видима */
+  }
+  50% {
+    opacity: 1; /* Лампочка скрыта */
+  }
+  100% {
+    opacity: 0; /* Лампочка видима */
+  }
+}
