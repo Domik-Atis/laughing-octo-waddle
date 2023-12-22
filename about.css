@@ -54,3 +54,95 @@
     .user-message {
       font-size: 14px;
     }
+
+@media only screen and (max-width: 600px) {
+
+body {
+  background: linear-gradient(to bottom, #000000, #87CEEB);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px; /* Изменили отступы для мобильного устройства */
+}
+
+.header {
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px; /* Измените размер шрифта под мобильное устройство */
+  font-weight: bold;
+  margin-bottom: 10px; /* Изменили отступы для мобильного устройства */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px; /* Изменили отступы для мобильного устройства */
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-card {
+  width: 100%; /* Изменили ширину для мобильного устройства */
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px; /* Изменили отступы для мобильного устройства */
+  margin-bottom: 20px; /* Изменили отступы для мобильного устройства */
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 60px; /* Изменили размеры для мобильного устройства */
+  height: 60px; /* Изменили размеры для мобильного устройства */
+  border-radius: 50%;
+  margin-bottom: 5px; /* Изменили отступы для мобильного устройства */
+}
+
+.user-name {
+  font-size: 16px; /* Измените размер шрифта под мобильное устройство */
+  font-weight: bold;
+  margin-bottom: 5px; /* Изменили отступы для мобильного устройства */
+}
+
+.user-message {
+  font-size: 12px; /* Измените размер шрифта под мобильное устройство */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+main {
+  padding: 10px; /* Изменили отступы для мобильного устройства */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+}
