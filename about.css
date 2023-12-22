@@ -55,7 +55,7 @@
       font-size: 14px;
     }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
 
 body {
   background: linear-gradient(to bottom, #000000, #87CEEB);
