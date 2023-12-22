@@ -97,7 +97,7 @@ nav ul li a {
 main {
   padding: 20px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .story-container {
     justify-content: center;
   }
