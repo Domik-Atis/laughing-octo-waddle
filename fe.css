@@ -5,6 +5,9 @@
       background: linear-gradient(to bottom, #000000, #66b0ff);
       font-family: 'Roboto', sans-serif;
          overflow: hidden;
+        padding: 0;
+      margin: 0;
+      height: 100vh;
     }
     
     h1 {
