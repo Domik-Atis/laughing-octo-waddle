@@ -41,6 +41,46 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-gap: 20px;
     }
+    
+@media screen and (max-width: 700px) {
+  body {
+  background: linear-gradient(to bottom, #000000, #87cefa);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px; /* Уменьшил отступы для мобильного устройства */
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-number {
+  font-size: 16px;
+  color: #555555;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr; /* Изменил количество столбцов для мобильного устройства */
+  grid-gap: 20px;
+}
+}
+    
   </style>
 </head>
 <body>
