@@ -1,14 +1,15 @@
-
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     
     body {
-      background: linear-gradient(to bottom, #000000, #66b0ff);
+      background: linear-gradient(to bottom, #000000, #87CEEB);
       font-family: 'Roboto', sans-serif;
-         overflow: hidden;
-        padding: 0;
+      overflow: hidden;
+      padding: 0;
       margin: 0;
       height: 100vh;
     }
+
+
     
     h1 {
       color: #ffffff;
@@ -52,6 +53,8 @@
       0% { opacity: 0; }
       100% { opacity: 1; }
     }
+    
+ 
 
 .garland {
   position: relative;
@@ -100,21 +103,21 @@
   background-color: #ff9900 ;
   top: 40%;
   left: 360px;
-  animation-delay: 4s ;
+  animation-delay: 0s ;
 }
 
 .light6 {
   background-color: #3333ff ;
   top: 65%;
   left: 420px;
-  animation-delay: 5s ;
+  animation-delay: 1s ;
 }
 
 .light7 {
   background-color: #ffff33 ;
   top: 40%;
   left: 520px;
-  animation-delay: 6s ;
+  animation-delay: 2s ;
 }
 
 
@@ -122,7 +125,7 @@
   background-color: #ff3333 ;
   top: 80%;
   left: 610px;
-  animation-delay: 7s ;
+  animation-delay: 3s ;
 }
 
 
@@ -130,7 +133,7 @@
   background-color: #a8ffab ;
   top: 40%;
   left: 700px;
-  animation-delay: 8s ;
+  animation-delay: 0s ;
 }
 
 
@@ -138,35 +141,35 @@
   background-color: #ff337a ;
   top: 75%;
   left: 800px;
-  animation-delay: 9s ;
+  animation-delay: 1s ;
 }
 
 .light11 {
   background-color: #ff9900 ;
   top: 35%;
   left: 900px;
-  animation-delay: 10s ;
+  animation-delay: 2s ;
 }
 
 .light12 {
   background-color: #3333ff ;
   top: 75%;
   left: 980px;
-  animation-delay: 11s ;
+  animation-delay: 3s ;
 }
 
 .light13 {
   background-color: #ffff33 ;
   top: 25%;
   left: 1080px;
-  animation-delay: 12s ;
+  animation-delay: 0s ;
 }
 
 .light14 {
   background-color: #ff3333 ;
   top: 85%;
   left: 1150px;
-  animation-delay: 13s ;
+  animation-delay: 1s ;
 }
 
 @keyframes blink {
@@ -180,6 +183,9 @@
     opacity: 0; /* Лампочка видима */
   }
 }
+
+
+
 
  .snowflake-container {
             position: absolute;
@@ -255,8 +261,7 @@ p {
   animation: fadeIn 2s ease-in-out;
 }
 
-     @media only screen and (max-width: 600px) {
-         
+@media only screen and (max-width: 600px) {
   /* Дополнительные стили для мобильных устройств */
   h1 {
     font-size: 24px; /* Увеличиваем размер шрифта */
@@ -273,6 +278,8 @@ p {
   }
 }
 @media only screen and (max-width: 600px) {
+
+
 .garland {
   position: relative;
   width: 300px; /* Измените размеры под ваши предпочтения */
@@ -424,6 +431,4 @@ p {
   }
 }
 }
-
  }
-
